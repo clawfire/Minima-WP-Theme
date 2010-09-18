@@ -1,0 +1,270 @@
+/*
+Theme Name: Minima
+Theme URI: http://thibaultmilan.com/
+Description: An minimal clean and text oriented theme
+Version: 1.0
+Author: Milan Thibault
+Author URI: http://thibaultmilan.com
+Tags: light color, fixed width, two columns, widgets, clean, text oriented, art
+
+*/
+/* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+ul,li { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+/* END RESET CSS */
+h1{font-size:2em;}
+h2{font-size:1.2em;margin-bottom:5px;}
+h3{font-size:1em;}
+p{font-size:0.8em;margin:0;padding:5px;text-align:justify;}
+a{text-decoration:none;color:#000;}
+p a{border-bottom: #0184D2 1px solid}
+p a:hover,li a:hover,.tags a:hover{cursor:pointer;border-bottom: #0184D2 1px solid;color:#0184D2;}
+a:active{position:relative;top:1px;}
+a img{border:none;text-decoration:none;}
+.clear{clear:both;}
+.readmore{float:right;}
+.aligncenter,
+dl.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alignleft {
+    float: left;
+	clear:left;
+}
+
+.alignright {
+    float: right;
+}
+
+.wp-caption {
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding-top: 4px;
+    margin: 10px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.wp-caption img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+.wp-caption-dd {
+    font-size: 11px;
+    line-height: 17px;
+    padding: 0 4px 5px;
+    margin: 0;
+}
+
+body{margin:0;
+	font-family: 'Cantarell', arial, serif;}
+#header{
+	width:960px;
+	border-top:5px solid #000;
+	height:200px;
+	margin: 0 auto 10px auto;
+}
+	#header h1{
+		margin: 40px 0 auto 40px;
+	}
+	#header p{
+		text-align:right;
+		margin-right:40px;
+	}
+	#header .menu{
+		width:960px;
+		border:none;
+		border:0px;
+		margin:0;
+		padding:0px;
+		font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		position:relative;
+		top:60px;
+		
+	}
+		#header .menu ul{
+			background:#000;
+			height:35px;
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		#header .menu li{
+			float:left;
+			padding:0px;
+		}
+			#header .menu li a{
+				background:#000;
+				color:#cccccc;
+				display:block;
+				font-weight:normal;
+				line-height:35px;
+				margin:0px;
+				padding:0px 25px;
+				text-align:center;
+				text-decoration:none;
+			}
+			#header .menu ul li a:hover{border-bottom:0;background: #0184D2 ;}
+			.menu li ul{
+				background:#000;
+				display:none;
+				height:auto;
+				padding:0px;
+				margin:0px;
+				border:0px;
+				position:absolute;
+				width:inherit;
+				z-index:200;
+				/*top:1em;
+				/*left:0;*/
+				}
+			.menu li:hover ul{
+				display:block;
+				}
+			.menu li li {
+				display:block;
+				float:none;
+				margin:0px;
+				padding:0px;
+				/*width:225px;*/
+				}
+			.menu li:hover li a{
+				background:none;
+				}
+			.menu li ul a{
+				display:block;
+				height:35px;
+				font-size:12px;
+				font-style:normal;
+				margin:0px;
+				padding:0px 10px 0px 15px;
+				text-align:left;
+				}
+#wrapper{
+	width:960px;
+	margin: auto auto;
+	overflow:hidden;
+}
+	#wrapper #sidebar{
+		width:300px;
+		float:right;
+		clear:both;
+		height:100%;
+		text-align:justify;
+	}
+		#sidebar .textwidget{width:300px;}
+		#sidebar .textwidget .me{width:200px;padding:5px;border: 1px solid #333;margin:10px 10px 10px 40px;}
+		#sidebar ul{padding:0;}
+		#sidebar li{
+			background: url("img/attibutes.png") top left no-repeat;
+			min-height:16px;
+			padding:0 0 0 18px;	
+		}
+		#sidebar li.recentcomments{
+			background: url("img/comment.png") top left no-repeat;
+			min-height:16px;
+			padding:0 0 0 18px;	
+		}
+		#sidebar .blogroll li{
+			background: url("img/link.png") top left no-repeat;
+			min-height:16px;
+			padding:0 0 0 18px;
+		}
+	#wrapper .post, #post{
+		color:#000000;
+		text-align:justify;
+		width:600px;
+		clear:left;
+	}
+		#wrapper .post a img{
+			float:left;
+			padding:5px;
+			margin:10px 10px 10px 0;
+			border: 1px #333 solid;
+			width:100px;
+			height:100px;
+			position:relative;
+			top:-10px;
+		}
+		#wrapper .post h2.title,#post h2.title{color:#000;}
+		#wrapper .post .date,#post .date{
+			float:left;
+			background: url("img/calendar.png") top left no-repeat;
+			min-height:16px;
+			font-size:0.5em;
+			padding:3px 0 0 18px;
+			position:relative;
+			margin:7px 10px 0 0;
+		}
+		#wrapper .post .tags, #post .tags{
+			float:left;
+			background: url("img/tag.png") top left no-repeat;
+			min-height:16px;
+			font-size:0.5em;
+			padding:3px 0 0 18px;
+		}
+		#wrapper .post .author, #post .author{
+			float:right;
+			background: url("img/user.png") top left no-repeat;
+			min-height:16px;
+			font-size:0.5em;
+			padding:3px 0 0 18px;
+		}
+#footer{
+	width:960px;
+	border-top:3px solid #000;
+	margin: 1px auto 0 auto;
+}
